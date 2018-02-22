@@ -1,6 +1,6 @@
 
 function result() {
-    let number = document.getElementById("thenumber");
+    let number = document.getElementById("thenumber").value;
     number = parseInt(number);
     console.log("Number = " + number);
     let oddEven;
