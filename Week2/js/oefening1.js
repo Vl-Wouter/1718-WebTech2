@@ -10,6 +10,10 @@ function result() {
     else if(number % 2 != 0){
         oddEven = "odd";
     }
+
+    if(isNaN(number)) {
+        oddEven = "not a number"
+    }
     
     console.log("Test = " + oddEven);
     
