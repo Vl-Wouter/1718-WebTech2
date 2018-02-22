@@ -1,4 +1,4 @@
-let number = document.getElementById("thenumber");
+let number = parseInt(document.getElementById("thenumber"));
 console.log("Number = " + number);
 let oddEven;
 if(number % 2 == 0) {
