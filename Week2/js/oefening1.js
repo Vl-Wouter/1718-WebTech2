@@ -1,12 +1,15 @@
 let number = document.getElementById("thenumber");
-let OddEven;
+console.log("Number = " + number);
+let oddEven;
 if(number % 2 == 0) {
-    OddEven = "Even";
+    oddEven = "Even";
 }
 
 else {
-    OddEven = "Odd";
+    oddEven = "Odd";
 }
+
+console.log("Test = " + oddEven);
 
 function result() {
     const res = "The number you wrote is " + OddEven;
