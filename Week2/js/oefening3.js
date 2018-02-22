@@ -1,3 +1,10 @@
+/**********************************
+ * @author      Wouter Vlaeyen
+ * @created     22/02/2018
+ * @modified    22/02/2018
+ * @copyright   Copyright © 2016-2017 Artevelde University College Ghent
+ * @function    Week 2
+ **********************************/
 let words = ["help ", "me ", "ffs"];
 
 for(let i = 0; i < words.length; i++) {

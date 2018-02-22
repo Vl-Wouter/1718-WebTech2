@@ -1,3 +1,10 @@
+/**********************************
+ * @author      Wouter Vlaeyen
+ * @created     22/02/2018
+ * @modified    22/02/2018
+ * @copyright   Copyright © 2016-2017 Artevelde University College Ghent
+ * @function    Week 2
+ **********************************/
 let calcTitle = function() {
     let score = document.getElementById('score').value;
     let title;
