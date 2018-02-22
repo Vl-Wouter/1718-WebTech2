@@ -4,15 +4,14 @@ function result() {
     number = parseInt(number);
     console.log("Number = " + number);
     let oddEven;
-    if(number % 2 == 0) {
+    if(isNaN(number)) {
+        oddEven = "not a number"
+    }
+    else if(number % 2 == 0) {
         oddEven = "even";
     }
     else if(number % 2 != 0){
         oddEven = "odd";
-    }
-
-    if(isNaN(number)) {
-        oddEven = "not a number"
     }
     
     console.log("Test = " + oddEven);
