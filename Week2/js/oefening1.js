@@ -4,10 +4,9 @@ function result() {
     number = parseInt(number);
     console.log("Number = " + number);
     let oddEven;
-    if(number % 2 === 0) {
+    if(number % 2 == 0) {
         oddEven = "even";
     }
-    
     else {
         oddEven = "odd";
     }
