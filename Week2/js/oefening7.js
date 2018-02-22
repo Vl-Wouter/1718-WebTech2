@@ -11,7 +11,7 @@ let calculate = function() {
 
     for(let i = begin; i <= eind; i++) {
         let res= "";
-        if(i % 3 === 0) {
+        /*if(i % 3 === 0) {
             res += "bitter";
             if(i % 5 === 0) {
                 res += "bal";
@@ -22,9 +22,18 @@ let calculate = function() {
         }
         else {
             res += i;
+        }*/
+
+        //Works with Switch
+        switch(true) {
+            case(i%5==0 && i%3==0): res = "bitterbal"; break;
+            case(i%3==0): res = "bitter"; break;
+            case(i%5==0): res = "bal"; break;
+            default: res = i;
         }
         document.getElementById('result').innerHTML += res + "<br>";
     }
+
 }
 
 // Add event listener
