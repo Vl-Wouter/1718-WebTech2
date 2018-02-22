@@ -1,8 +1,8 @@
-let number = parseInt(document.getElementById("thenumber").value);
+let number = document.getElementById("thenumber").value;
 console.log("Number = " + number);
 let oddEven;
-if(number % 2 == 0) {
-    oddEven = "oven";
+if(number % 2 === 0) {
+    oddEven = "even";
 }
 
 else {
