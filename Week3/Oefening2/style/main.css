@@ -1,0 +1,24 @@
+body {
+    padding: 30px;
+  }
+  body, input {
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  input {
+    background: none;
+    border: none;
+    width: 75px;
+    text-align: center;
+  }
+  input#result4 {
+    border: 1px solid #CCC;
+  }
+  img {
+    height: 50px;
+    display: inline-block;
+  }
+  li {
+    list-style-type: none;
+    margin: 10px 0;
+  }

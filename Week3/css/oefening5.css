@@ -1,0 +1,45 @@
+/**
+ * @Author: Wouter Vlaeyen
+ * @Date:   2018-03-01T13:35:05+01:00
+ * @Email:  woutvlae@student.arteveldehs.be
+ * @Filename: oefening5.css
+ * @Last modified by:   Wouter Vlaeyen
+ * @Last modified time: 2018-03-01T13:51:38+01:00
+ * @License: Apache 2.0
+ * @Copyright: Copyright © 2017-2018 Artevelde University College Ghent
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
+
+body {
+  font-family: "Roboto", sans-serif;
+
+}
+
+.header {
+  background-color: #343434;
+  color: #ffffff;
+  padding: 3%;
+  border-radius: 20px 20px 0 0;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 3px 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+.btn-lighter {
+  background-color: #77dcff;
+  transition: ease 0.25s;
+}
+
+.btn-lighter:hover {
+  background-color: #97e8f6;
+  transition: ease 0.25s;
+}
