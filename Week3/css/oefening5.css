@@ -4,7 +4,7 @@
  * @Email:  woutvlae@student.arteveldehs.be
  * @Filename: oefening5.css
  * @Last modified by:   Wouter Vlaeyen
- * @Last modified time: 2018-03-01T13:51:38+01:00
+ * @Last modified time: 2018-03-01T14:00:57+01:00
  * @License: Apache 2.0
  * @Copyright: Copyright © 2017-2018 Artevelde University College Ghent
  */
@@ -21,6 +21,7 @@ body {
   color: #ffffff;
   padding: 3%;
   border-radius: 20px 20px 0 0;
+  margin-bottom: -2%;
 }
 
 h1 {
@@ -41,5 +42,14 @@ h1 {
 
 .btn-lighter:hover {
   background-color: #97e8f6;
+  transition: ease 0.25s;
+}
+
+.result {
+  background-color: #aeff79;
+  padding: 2% 10px;
+  border: 2px solid #90c400;
+  border-top: 0;
+  border-radius: 0 0 20px 20px;
   transition: ease 0.25s;
 }

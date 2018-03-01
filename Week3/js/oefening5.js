@@ -4,7 +4,7 @@
  * @Email:  woutvlae@student.arteveldehs.be
  * @Filename: oefening5.js
  * @Last modified by:   Wouter Vlaeyen
- * @Last modified time: 2018-03-01T13:43:00+01:00
+ * @Last modified time: 2018-03-01T13:56:46+01:00
  * @License: Apache 2.0
  * @Copyright: Copyright © 2017-2018 Artevelde University College Ghent
  */
@@ -26,6 +26,7 @@ let guessCheck = function() {
     console.log(userGuess);
     guesses++;
   }
+  document.getElementById('result').className += "result";
   document.getElementById('result').innerHTML = "Welkom. Je hebt na " +  guesses + "x het wachtwoord geraden";
 }
 
