@@ -1,0 +1,68 @@
+/***************************************************
+* @author: Frederick Roegiers
+* @created: 08/03/2017
+* @modified: 08/03/2017
+* @copyright: Artevelde University College Ghent
+* @TODO: do some magic
+***************************************************/
+body {
+  padding: 20px;
+}
+
+#rob {
+  width: 200px;
+  display: block;
+}
+
+.supportbricks {
+  background-position: center center;
+  background-size: contain;
+  background-image: url('https://rogerthat.be/images/praktijk4/brick2.png');  /* default bg */
+  border-radius: 3px;
+  height: 30px;
+}
+
+.bricks {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.brick {
+  margin: 5px auto;
+  width: 100%;
+  max-width: 100px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('https://rogerthat.be/images/praktijk4/brick2.png');  /* default bg */
+  border-radius: 3px;
+}
+
+.brick-yellow {
+  background-image: url('https://rogerthat.be/images/praktijk4/brick7.png');
+}
+
+.brick-black {
+  background-image: url('https://rogerthat.be/images/praktijk4/brick3.png');
+}
+
+.brick-orange {
+  background-image: url('https://rogerthat.be/images/praktijk4/brick6.png');
+}
+
+.brick-blue {
+  background-image: url('https://rogerthat.be/images/praktijk4/brick5.png');
+}
+
+.label {
+  background-color: #F44336;
+  display: inline-block;
+  padding: 2px 5px;
+  font-size: 10px;
+  color: #FFF;
+}
+
+td {
+  padding: 3px;
+}
