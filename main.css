@@ -1,4 +1,13 @@
-body {
-    background: #eaeaea;
-    font-family: sans-serif;
+/**
+ * @Author: Wouter Vlaeyen
+ * @Date:   15-03-2018
+ * @Email:  woutvlae@student.arteveldehs.be
+ * @Filename: main.css
+ * @Last modified by:   Wouter Vlaeyen
+ * @Last modified time: 15-03-2018
+ * @Copyright: 2017-2018 Artevelde University College Ghent
+ */
+
+.blue-lighten-2 {
+  background-color: #64b5f6!important;
 }
