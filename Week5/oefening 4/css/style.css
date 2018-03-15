@@ -1,0 +1,72 @@
+/**
+ * @Author: Wouter Vlaeyen
+ * @Date:   2018-03-15T11:32:34+01:00
+ * @Email:  woutvlae@student.arteveldehs.be
+ * @Filename: style.css
+ * @Last modified by:   Wouter Vlaeyen
+ * @Last modified time: 2018-03-15T14:08:03+01:00
+ * @License: Apache 2.0
+ * @Copyright: Copyright © 2017-2018 Artevelde University College Ghent
+ */
+
+
+
+body {
+  padding: 10px;
+  background-color: #FEFEFE;
+}
+
+h3 {
+    color: #05A8AA;
+    text-align: center;
+}
+
+img {
+  width: 30%;
+  float: left;
+  margin: 0 25px 25px 0;
+}
+
+table {
+  width: auto;
+}
+
+div {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+td {
+  padding: 0;
+  border: 5px solid #EF5B5B;
+  width: 100px;
+  height: 100px;
+  background-color: #FFBA49;
+}
+
+td div {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+
+  width: 100%;
+  height: 100%;
+}
+
+.memory-block {
+  opacity: 1;
+}
+
+.memory-found {
+  background-image: url('https://rogerthat.be/images/praktijk5/petunia.png') !important;
+}
+
+.small-found {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 5px;
+}
