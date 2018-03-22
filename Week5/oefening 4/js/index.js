@@ -4,13 +4,13 @@
  * @Email:  woutvlae@student.arteveldehs.be
  * @Filename: index.js
  * @Last modified by:   Wouter Vlaeyen
- * @Last modified time: 2018-03-15T14:09:25+01:00
+ * @Last modified time: 15-03-2018
  * @License: Apache 2.0
  * @Copyright: Copyright © 2017-2018 Artevelde University College Ghent
  */
 
 let found = document.getElementById('found');
-
+let boxes = Array.from(document.getElementsByClassName('memory-block'));
 let imageArray = [
   "img/cuddles.png",
   "img/discobear.jpg",
@@ -24,14 +24,62 @@ let imageArray = [
   "img/themole.png"
 ];
 
-let boxes = Array.from(document.getElementsByClassName('memory-block'));
+let pairArray = [];
 
+let checking = {};
+
+function code(index) {
+  console.log(imageArray[index]);
+  console.log(checking);
+}
+
+function randomizer() {
+  for(let i = 0; i < boxes.length; i++) {
+    let index = Math.floor(Math.random()*pairArray.length);
+
+    if(checking[pairArray[index]] != undefined) {
+      if(checking[pairArray[index]].times != 2) {
+        checking[pairArray[index]].times = checking[pairArray[index]].times + 1;
+        code(index);
+      }
+    } else {
+      checking[pairArray[index]] = {times: 1};
+    }
+    code(index);
+  }
+}
+
+while(pairArray.length !== 8) {
+  let index = Math.floor(Math.random()*imageArray.length);
+  if(pairArray.indexOf(imageArray[index]) == -1) {
+    pairArray.push(imageArray[index]);
+  } else {
+
+  }
+}
+randomizer();
+
+console.log(pairArray);
+console.log(imageArray);
+
+let fullArray = [];
+for(let i = 0; i < 2; i++) {
+  for(let j = 0; j < pairArray.length; j++) {
+    fullArray.push(pairArray[j]);
+  }
+}
+console.log(fullArray);
+
+for(let i = 0; i < boxes.length; i++) {
+  let index = Math.floor(Math.random()*fullArray.length);
+  boxes[i].innerHTML = "<img src=\"" + fullArray[index] + "\" >";
+  fullArray.splice(index, 1);
+}
 //console.log(boxes);
 
-let usedImg = [];
-for(let i = 0; i < 8; i++) {
+/*for(let i = 0; i < 8; i++) {
   let index = Math.floor(Math.random()*imageArray.length);
-  usedImg.push({img: imageArray[index], times: 2});
+  pairArray.push({img: imageArray[index], times: 2});
 }
 console.log(usedImg);
 
@@ -41,7 +89,7 @@ for(let i = 0; i < boxes.length; i++) {
     boxes[i].innerHTML = "<img src=\"" + usedImg[index].img + "\">";
     usedImg[index].times--;
   }
-}
+}*/
 
 let revealcount = 0;
 let revealed = [];

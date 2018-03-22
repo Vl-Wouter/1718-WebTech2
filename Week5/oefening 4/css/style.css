@@ -4,7 +4,7 @@
  * @Email:  woutvlae@student.arteveldehs.be
  * @Filename: style.css
  * @Last modified by:   Wouter Vlaeyen
- * @Last modified time: 2018-03-15T14:08:03+01:00
+ * @Last modified time: 15-03-2018
  * @License: Apache 2.0
  * @Copyright: Copyright © 2017-2018 Artevelde University College Ghent
  */
@@ -56,8 +56,14 @@ td div {
   height: 100%;
 }
 
+td div img {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+}
+
 .memory-block {
-  opacity: 1;
+  opacity: 0;
 }
 
 .memory-found {
