@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Book search</h1>
+        </header>
+
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="btnSearchBook">Go!</button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search for ISBN" id="isbnSearchInput">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-6">
+                <div class="card">
+                    <img id="bookImage" src="https://d13yacurqjgara.cloudfront.net/users/1174720/screenshots/3084779/cafe6_2x-01.png">
+                    <h1 id="bookTitle">Card Title</h1>
+                    <p id="bookDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sollicitudin quam.</p>
+                    <p>
+                        <span class="subtitle">ISBN: </span>
+                        <span id="bookIsbn"></span>
+                    </p>
+                    <p>
+                        <span class="subtitle">Auteur: </span>
+                        <span id="bookAuthor"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
