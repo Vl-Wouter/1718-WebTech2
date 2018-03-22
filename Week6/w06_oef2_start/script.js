@@ -4,7 +4,7 @@
  * @Email:  woutvlae@student.arteveldehs.be
  * @Filename: script.js
  * @Last modified by:   Wouter Vlaeyen
- * @Last modified time: 2018-03-22T11:47:46+01:00
+ * @Last modified time: 2018-03-22T11:59:48+01:00
  * @License: Apache 2.0
  * @Copyright: Copyright © 2017-2018 Artevelde University College Ghent
  */
@@ -33,6 +33,7 @@
      // show error
      if(error) {
          // do something here
+         
          return false;
      }
      for(let i = 0; i < data.length; i++) {
