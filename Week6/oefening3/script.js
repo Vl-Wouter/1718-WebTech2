@@ -4,7 +4,7 @@
  * @Email:  woutvlae@student.arteveldehs.be
  * @Filename: script.js
  * @Last modified by:   Wouter Vlaeyen
- * @Last modified time: 2018-03-22T13:51:23+01:00
+ * @Last modified time: 2018-03-22T13:53:40+01:00
  * @License: Apache 2.0
  * @Copyright: Copyright © 2017-2018 Artevelde University College Ghent
  */
@@ -58,6 +58,7 @@ let getBook = function() {
 
     //vervangen van Auteur
     let bookAuthor = document.getElementById('bookAuthor');
+    bookAuthor.innerHTML = "";
     for(let i = 0; i < book.Authors.length; i++) {
       bookAuthor.innerHTML += book.Authors[i].Name + ' ';
     }
