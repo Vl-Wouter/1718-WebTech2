@@ -14,7 +14,7 @@
 let createBoard = function () {
   for(let i=0; i < 8; i++) {
     for(let j=0; j < 8; j++) {
-      //TODO: Work on this someday
+      //TODO: Work on this someday id:0 gh:1 ic:gh
     }
   }
 }
