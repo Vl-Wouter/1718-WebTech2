@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Joke Generator</title>
+     <meta name="description" content="Rik Masco Moppen">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+   <div class="container">
+     <div class="titlebar text-blue-light">
+       <h1 id="pagetitle">Joke generator</h1>
+     </div>
+     <div class="form">
+       <form>
+         <input type="text" id="firstName" placeholder="First Name" />
+         <input type="text" id="lastName" placeholder="Last Name" />
+         <button type="button" class="btn btn-orange" id="btnGen">Generate</button>
+       </form>
+     </div>
+     <div class="list">
+       <ul id="jokes">
+
+       </ul>
+     </div>
+     <div class="footer bg-blue-dark">
+       <span id="author">Made by Wouter Vlaeyen</span>
+       <span id="github"><a href="https://github.com/Vl-Wouter"><i class="fab fa-github fa-2x"></i></a></span>
+     </div>
+   </div>
+   <script src="js/main.js"></script>
+ </body>
+
+ </html>
