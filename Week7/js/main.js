@@ -47,17 +47,23 @@ let createJoke = function() {
 
     let jokecontainer = document.createElement('li');
     jokecontainer.classList.add('jokeItem');
+    jokecontainer.id = joke.value.id;
     let joketxtcont = document.createElement('p');
     joketxtcont.classList.add('joketxt')
     joketxtcont.innerHTML = joke.value.joke;
     let jokeidcont = document.createElement('p');
     jokeidcont.classList.add('jokeid')
-    let jokeid = document.createTextNode('joke ID: ' + joke.value.id);
+    let jokeid = document.createTextNode('Joke ID: ' + joke.value.id);
     jokeidcont.appendChild(jokeid);
     jokecontainer.appendChild(joketxtcont);
     jokecontainer.appendChild(jokeidcont);
     console.log(joketxtcont.innerHTML);
     jokelist.appendChild(jokecontainer);
+    jokecontainer.classList.add('scale-in');
+    setTimeout(function() {
+      jokecontainer.classList.remove('scale-in');
+    }, 300)
+
   });
   firstInput.value = firstName;
   lastInput.value = lastName;

@@ -20,6 +20,7 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+/* https://coolors.co/31393c-2176ff-33a1fd-f3e9dc-f79824 */
 /* background-colors */
 .bg-blue-dark {
   background-color: #2176ff;
@@ -60,7 +61,7 @@ html, body {
   grid-template: 100px 1fr 40px / repeat(4, 1fr);
   grid-template-areas:
       'titlebar titlebar form form'
-      'list list list none'
+      'list list list explain'
       'footer footer footer footer';
 }
 
@@ -81,6 +82,12 @@ html, body {
   grid-area: list;
   max-height: 100%;
   overflow: auto;
+}
+
+.explain {
+  grid-area: explain
+  max-height: 100%;
+  padding: 0 5%;
 }
 
 .footer {
@@ -118,6 +125,7 @@ input {
   border: 0;
   border-radius: 5px;
   font-family: 'Lato', sans-serif;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -127,9 +135,25 @@ input {
   transition: all 0.25s;
 }
 
+.btn-blue-light {
+  background-color: #33a1fd;
+  color: #fff;
+  transition: all 0.25s;
+}
+
+.btn-blue-light:hover {
+  background-color: #77b9f0;
+  transition: all 0.25s;
+}
+
 .btn-orange:hover {
   background-color: #f9af55;
   transition: all 0.25s;
+}
+
+.btn-center {
+  width: 25%;
+  margin: 0 20%;
 }
 
 a:link {
@@ -171,4 +195,23 @@ a:hover {
   font-size: 12pt;
   color: #989898;
   text-align: right;
+}
+
+/* Animation */
+/* Keyframes */
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+    transform-origin: bottom left;
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+
+/* classes */
+.scale-in {
+  animation-name: scale-in;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in-out;
 }
