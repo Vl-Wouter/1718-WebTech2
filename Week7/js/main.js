@@ -4,7 +4,7 @@
  * @Email:  woutvlae@student.arteveldehs.be
  * @Filename: main.js
  * @Last modified by:   Wouter Vlaeyen
- * @Last modified time: 28-03-2018
+ * @Last modified time: 29-03-2018
  * @Copyright: 2017-2018 Artevelde University College Ghent
  */
 // Get form inputs
@@ -14,7 +14,7 @@ let lastInput = document.getElementById('lastName');
 
 // get JSON via url
 const getJSON = function(url, callback) {
-    var xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpsRequest();
     xhr.open('GET', url, true);
     xhr.responseType = 'json';
     xhr.onload = function() {
