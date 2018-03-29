@@ -34,7 +34,7 @@ const getJSON = function(url, callback) {
 let createJoke = function() {
   let firstName = firstInput.value;
   let lastName = lastInput.value;
-  let url = 'http://api.icndb.com/jokes/random?firstName=' + firstName + '&lastName=' + lastName;
+  let url = 'https://api.icndb.com/jokes/random?firstName=' + firstName + '&lastName=' + lastName;
   console.log(url);
   getJSON(url, function(error, data) {
     if(error) {
