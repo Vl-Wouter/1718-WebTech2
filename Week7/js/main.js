@@ -14,7 +14,7 @@ let lastInput = document.getElementById('lastName');
 
 // get JSON via url
 const getJSON = function(url, callback) {
-    var xhr = new XMLHttpsRequest();
+    var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.responseType = 'json';
     xhr.onload = function() {
