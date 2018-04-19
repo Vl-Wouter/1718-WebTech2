@@ -3,15 +3,7 @@
     "^(node_modules|bower_components|\\.imdone|target|build|dist|logs|flow-typed|imdone-export.json)[\\/\\\\]?|\\.(git|svn|hg|npmignore)|\\~$|\\.(jpg|png|gif|swp|ttf|otf)$"
   ],
   "watcher": true,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "keepEmptyPriority": false,
-=======
   "keepEmptyPriority": true,
->>>>>>> 04f6693e27a12ed25795f8efa53de8bf70ac3411
-=======
-  "keepEmptyPriority": true,
->>>>>>> 04f6693e27a12ed25795f8efa53de8bf70ac3411
   "code": {
     "include_lists": [
       "TODO",
@@ -25,17 +17,8 @@
       "XXX",
       "IDEA",
       "NOTE",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "REVIEW"
-=======
       "REVIEW",
       "MARK"
->>>>>>> 04f6693e27a12ed25795f8efa53de8bf70ac3411
-=======
-      "REVIEW",
-      "MARK"
->>>>>>> 04f6693e27a12ed25795f8efa53de8bf70ac3411
     ]
   },
   "lists": [
@@ -51,19 +34,10 @@
     "pedantic": false,
     "smartLists": true,
     "langPrefix": "language-"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 04f6693e27a12ed25795f8efa53de8bf70ac3411
   },
   "sync": {
     "id": "5ab8a6cc0647bc75fd8322c8",
     "name": "Vl-Wouter/1718-WebTech2",
     "useImdoneioForPriority": true
-<<<<<<< HEAD
->>>>>>> 04f6693e27a12ed25795f8efa53de8bf70ac3411
-=======
->>>>>>> 04f6693e27a12ed25795f8efa53de8bf70ac3411
   }
 }
