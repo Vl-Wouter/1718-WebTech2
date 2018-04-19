@@ -1,0 +1,217 @@
+/**
+ * @Author: Wouter Vlaeyen
+ * @Date:   28-03-2018
+ * @Email:  woutvlae@student.arteveldehs.be
+ * @Filename: main.css
+ * @Last modified by:   Wouter Vlaeyen
+ * @Last modified time: 28-03-2018
+ * @Copyright: 2017-2018 Artevelde University College Ghent
+ */
+
+
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+/* base */
+html, body {
+  height: 100%;
+  background-color: #31393c;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* https://coolors.co/31393c-2176ff-33a1fd-f3e9dc-f79824 */
+/* background-colors */
+.bg-blue-dark {
+  background-color: #2176ff;
+}
+
+.bg-blue-light {
+  background-color: #33a1fd;
+}
+
+.bg-orange {
+  background-color: #f79824;
+}
+
+/* colors */
+.text-blue-dark {
+  color: #2176ff;
+}
+
+.text-blue-light {
+  color: #33a1fd;
+}
+
+.text-orange {
+  color: #f79824;
+}
+
+/* Structure & Base Classes */
+
+.container {
+  width: 90%;
+  height: 90%;
+  background-color: #fcfcfc;
+  box-shadow: 5px 5px 10px #111;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: grid;
+  grid-template: 100px 1fr 40px / repeat(4, 1fr);
+  grid-template-areas:
+      'titlebar titlebar form form'
+      'list list list explain'
+      'footer footer footer footer';
+}
+
+.titlebar {
+  grid-area: titlebar;
+  padding-left: 5%;
+  line-height: 50px;
+}
+
+.form {
+  grid-area: form;
+  line-height: 100px;
+  text-align: right;
+  padding-right: 3%;
+}
+
+.list {
+  grid-area: list;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.explain {
+  grid-area: explain
+  max-height: 100%;
+  padding: 0 5%;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 0 3%;
+  line-height: 40px;
+}
+
+/* Specifics */
+#pagetitle {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#author {
+  color: #efefef;
+}
+
+#github {
+  position: absolute;
+  right: 3%;
+  line-height: 55px
+}
+
+input {
+  padding: 6px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-orange {
+  background-color: #f79824;
+  color: #fff;
+  transition: all 0.25s;
+}
+
+.btn-blue-light {
+  background-color: #33a1fd;
+  color: #fff;
+  transition: all 0.25s;
+}
+
+.btn-blue-light:hover {
+  background-color: #77b9f0;
+  transition: all 0.25s;
+}
+
+.btn-orange:hover {
+  background-color: #f9af55;
+  transition: all 0.25s;
+}
+
+.btn-center {
+  width: 25%;
+  margin: 0 20%;
+}
+
+a:link {
+  color: #33a1fd;
+  transition: all 0.25s;
+}
+
+a:visited {
+  color: #33a1fd;
+  transition: all 0.25s;
+}
+
+a:hover {
+  color: #f79824;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+#jokes {
+  list-style: none;
+}
+
+.jokeItem {
+  width: 60%;
+  margin: auto;
+  background-color: #efefef;
+  padding: 8px 3%;
+  border-radius: 10px;
+  margin: 2% 0;
+}
+
+.joketxt {
+  font-size: 18pt;
+  color: #2b2b2b;
+  font-weight: 300;
+}
+
+.jokeid {
+  font-size: 12pt;
+  color: #989898;
+  text-align: right;
+}
+
+/* Animation */
+/* Keyframes */
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+    transform-origin: bottom left;
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+
+/* classes */
+.scale-in {
+  animation-name: scale-in;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in-out;
+}
