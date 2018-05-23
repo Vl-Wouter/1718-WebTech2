@@ -1,0 +1,42 @@
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: grid;
+    grid-template:
+        '. . .' 45%
+        '. search .' 1fr
+        '. . .' 45% / 1fr 1fr 1fr;
+    height: 100%; 
+}
+
+.search {
+    grid-area: search;
+}
+
+.form-input {
+    background-color: #ededed;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 3px 3px 6px #555;
+    font-size: 20pt;
+    height: 50%;
+    padding: 0 1%;
+    width: 80%;
+}
+
+.form-button {
+    background: linear-gradient(135deg, #42aaf0, #1f7aaf);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px #555;
+    color: #fff;
+    font-size: 18pt;
+    height: 50%;
+    width: 16%;
+}
